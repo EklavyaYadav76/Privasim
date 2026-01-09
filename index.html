@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privasim – Secure Link Checker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- FULL PAGE PARTICLE BACKGROUND -->
+<canvas id="bg"></canvas>
+
+<header>
+  <div class="logo">Privasim</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#faq">FAQs</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1 class="reveal">Privacy Meets Security</h1>
+  <p class="reveal delay">Check if a link is safe before opening it</p>
+  <button class="glow-btn" id="getStarted">Get Started</button>
+</section>
+
+<section id="scanner" class="scanner">
+  <h2>Verify a Link</h2>
+  <div class="scan-box">
+    <input id="urlInput" type="text" placeholder="https://example.com">
+    <button id="scanBtn">Scan</button>
+  </div>
+
+  <div id="loader" class="loader hidden"></div>
+
+  <div id="result" class="result hidden">
+    <div class="risk-circle"><span id="riskValue">0%</span></div>
+    <h3 id="riskText"></h3>
+  </div>
+</section>
+
+<section id="reviews">
+  <h2 class="reveal">User Reviews</h2>
+  <div class="review-grid">
+    <div class="card">Very fast and clean UI<span>— Alex</span></div>
+    <div class="card">Feels futuristic & secure<span>— Maria</span></div>
+    <div class="card">Perfect for unknown links<span>— Daniel</span></div>
+  </div>
+</section>
+
+<!-- FAQs USING DETAILS/SUMMARY -->
+<section id="faq">
+  <h2 class="reveal">Frequently Asked Questions</h2>
+
+  <details class="faq-item">
+    <summary>How does Privasim check links?</summary>
+    <p>We analyze URL structure, domain reputation, SSL security, and known malicious patterns.</p>
+  </details>
+
+  <details class="faq-item">
+    <summary>Is my link stored or tracked?</summary>
+    <p>No. All scans are private and links are never saved.</p>
+  </details>
+
+  <details class="faq-item">
+    <summary>What does the risk percentage mean?</summary>
+    <p>It shows the likelihood that a link may contain phishing, malware, or unsafe redirects.</p>
+  </details>
+
+  <details class="faq-item">
+    <summary>Is Privasim free to use?</summary>
+    <p>Yes, basic link verification is completely free.</p>
+  </details>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
