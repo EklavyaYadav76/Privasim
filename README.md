@@ -1,2 +1,2 @@
-# Privasim
-A website frontend code
+# Privasim (website checker)
+This is the UI of the webstie
